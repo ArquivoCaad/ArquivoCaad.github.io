@@ -1,1 +1,0 @@
-const ref = "./assets/img69/";

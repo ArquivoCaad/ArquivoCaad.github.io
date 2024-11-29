@@ -1,1 +1,0 @@
-const ref = "./assets/img_jogo_base/";
