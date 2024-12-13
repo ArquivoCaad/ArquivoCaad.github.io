@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div id="fundo">
+      <canvas id="anima"></canvas>
+    </div>
+    <header id="titulo">
+      <button id="home" onclick="window.location.href = './index.html';">
+        🏠 Home
+      </button>
+      <h1>Modo Browsers</h1>
+      <div id="theme-switcher">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+    <main>
+      <div id="Jogo">
+        <div class="controls">
+          <div id="ia-toggle">
+            <span id="ia-label">IA:</span>
+            <label class="switch">
+              <input type="checkbox" id="ia-slider" onchange="toggleIA()" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <button
+            class="difficulty-button"
+            data-level="easy"
+            onclick="setDifficulty('easy')"
+          >
+            Fácil
+          </button>
+          <button
+            class="difficulty-button active"
+            data-level="medium"
+            onclick="setDifficulty('medium')"
+          >
+            Médio
+          </button>
+          <button
+            class="difficulty-button"
+            data-level="hard"
+            onclick="setDifficulty('hard')"
+          >
+            Difícil
+          </button>
+        </div>
+        <table class="tabela">
+          <tr>
+            <td id="c1" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+            <td id="c2" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+            <td id="c3" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+          </tr>
+          <tr>
+            <td id="c4" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+            <td id="c5" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+            <td id="c6" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+          </tr>
+          <tr>
+            <td id="c7" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+            <td id="c8" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+            <td id="c9" onclick="checkjogo(this)">
+              <img src="./assets/img_jogo_base/transp.png" alt="imagem" />
+            </td>
+          </tr>
+        </table>
+        <div id="stats">
+          <div id="dados">
+            <span id="contPartida">#1</span>
+            <span data-label="Vitórias X" id="xWins">0</span>
+            <span data-label="Vitórias O" id="oWins">0</span>
+            <span data-label="Empates" id="draws">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        <button
+          class="button"
+          id="resetButton"
+          onclick="window.location.reload()"
+        >
+          Resetar
+        </button>
+        <button class="button" id="nextButton" onclick="resetGame()">
+          Proxima Partida
+        </button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>
+          &copy; 2024 Jogo da Velha Epic Version. Todos os direitos reservados.
+        </p>
+        <ul class="footer-links">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="sound">
+      <audio id="win">
+        <source src="./assets/audio/VictorySFX.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="win2">
+        <source src="./assets/audio/Victory2SFX.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="eWin">
+        <source src="./assets/audio/EpicWinSFX.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="bruh">
+        <source src="./assets/audio/bruh.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </body>
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+
+    themeToggle.addEventListener("change", () => {
+      if (themeToggle.checked) {
+        document.body.classList.add("light-mode");
+      } else {
+        document.body.classList.remove("light-mode");
+      }
+    });
+  </script>
+  <script src="./js/main.js"></script>
+  <script src="./js/minimax.js"></script>
+  <script src="./js/fundo.js"></script>
+</html>
