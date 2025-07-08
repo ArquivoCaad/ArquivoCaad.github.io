@@ -292,6 +292,7 @@ function draw() {
       }
         imageMode(CENTER);
         image(imagens.arvore,width/2,0,width,imagens.arvore.height*(width)/imagens.arvore.width);
+        imageMode(CORNER);
 
         let config = difficulties[selectedDifficulty];
         let elapsedTime = millis() - startTime;
