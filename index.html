@@ -11,20 +11,48 @@
 <body>
     <header>
         <div id="header-content">
-            <h1 id="logo">By May</h1>
-            <div id="theme-switcher">
-              <label class="switch">
-                <input type="checkbox" id="theme-toggle" />
-                <span class="slider"></span>
-              </label>
-            </div>
+            <h1>Méi Valadão</h1>
         </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Bem-vindo ao meu portifolio</h2>
-            <p>Explore meus projetos e habilidades.</p>
+        <section id="intro">
+            <section class="parallax">
+                <img src="./assets/Imagens/paralaxe/corBase.png" class="camada" data-speed="0">
+                <img src="./assets/Imagens/paralaxe/QuintoPlano.png" class="camada" data-speed="9">
+                <img src="./assets/Imagens/paralaxe/fog4.png" class="camada fog" data-speed="11">
+                <img src="./assets/Imagens/paralaxe/QuartoPlano.png" class="camada" data-speed="10">
+                <img src="./assets/Imagens/paralaxe/fog3.png" class="camada fog" data-speed="12">
+                <img src="./assets/Imagens/paralaxe/TerceiroPlano.png" class="camada" data-speed="11">
+                <img src="./assets/Imagens/paralaxe/fog2.png" class="camada fog" data-speed="14">
+                <img src="./assets/Imagens/paralaxe/SegundoPlano.png" class="camada" data-speed="13">
+                <img src="./assets/Imagens/paralaxe/fog1.png" class="camada fog" data-speed="15">
+                <img src="./assets/Imagens/paralaxe/PrimeiroPlano.png" class="camada" data-speed="17">
+            </section>
+            <img id="imgsobreposto" src="./assets/Imagens/configblur(1).png" alt="">
+            <div id="txtsobreposto">
+                <h1>Méi Valadão</h1>
+                <h3>Animadora e dev nas horas vaga...</h3>
+            </div>
+        </section>
+        
+
+        <section id="categorias">
+            <h2>Areas de atuação</h2>
+            <div id="c_opc">
+                <div>
+                    <h3>Audiovisual</h3>
+                    <p>Animação, Roteiro, Storyboard e Edição de Video</p>
+                </div>
+                <div>
+                    <h3>Programação</h3>
+                    <p>Programação criativa, web e jogos</p>
+                </div>
+                <div>
+                    <h3>Diversos</h3>
+                    <p>Ilustração, Encadernação e Grafica</p>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
@@ -32,50 +60,55 @@
             <div class="project-list">
                 <div class="project">
                     <h3>Adivinhe o Pokémon</h3>
-                    <p>Um jogo divertido onde você precisa adivinhar o Pokémon!</p>
-                    <a href="./Legacy/Pokemon/index.html" class="btn">Play</a>
+                    <p>-Ficha tecnica e imagem-</p>
+                    <a href="./Legacy/Pokemon/index.html" class="btn">Abrir</a>
                 </div>
                 <div class="project">
                     <h3>Jogo da Velha</h3>
-                    <p>Desafie seus amigos neste clássico jogo da velha com um visual renovado.</p>
-                    <a href="./Legacy/Veia/index.html" class="btn">Play</a>
+                    <p>-Ficha tecnica e imagem-</p>
+                    <a href="./Legacy/Veia/index.html" class="btn">Abrir</a>
                 </div>
                 <div class="project">
                     <h3>Stardew Egg</h3>
-                    <p>Um jogo de fazendinha inspirado em Stardew Valley. Algo bizarro esta a espreita!</p>
-                    <a href="./Legacy/Egg/index.html" class="btn">Play</a>
+                    <p>-Ficha tecnica e imagem-</p>
+                    <a href="./Legacy/Egg/index.html" class="btn">Abrir</a>
                 </div>
                 <div class="project">
                     <h3>MSTardew</h3>
-                    <p>Segunda versão do Stardew Egg.</p>
-                    <a href="./Legacy/MSTardew/index.html" class="btn">Play</a>
+                    <p>-Ficha tecnica e imagem-</p>
+                    <a href="./Legacy/MSTardew/index.html" class="btn">Abrir</a>
                 </div>
                 <div class="project">
                     <h3>Natureza Morta</h3>
-                    <p>Um simples projeto artistico para representação de um imagem de natureza morta.</p>
-                    <a href="./Legacy/Natureza_morta/index.html" class="btn">Play</a>
+                    <p>...</p>
+                    <a href="./Legacy/Natureza_morta/index.html" class="btn">Abrir</a>
                 </div>
                 <div class="project">
                     <h3>Narrativas Interativas - Mingau</h3>
-                    <p>Projeto de Narrativa interativa de ivestigação pel predio de belas artes. O jogo possui uma baixa responsividade pelo computador.</p>
-                    <a href="./Legacy/mingau/index.html" class="btn">Play</a>
+                    <p>-Ficha tecnica e imagem-</p>
+                    <a href="./Legacy/mingau/index.html" class="btn">Abrir</a>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contato</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Seu nome" required />
-                <input type="email" name="email" placeholder="Seu e-mail" required />
-                <textarea name="message" placeholder="Sua mensagem" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Curriculo</p>
+        </section>
+
+        <section id="contato">
+            <h2>Formas de Contato</h2>
+            <p>Entre em contato para fazer orçamentos ou feedback</p>
+            <div>
+                <a href="" class="btn">WhatsApp</a>
+                <a href="" class="btn">Instagram</a>
+                <a href="" class="btn">Email</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2023 By May. Todos os direitos reservados.</p>
+        <p>© 2025 By Méi. Todos os direitos reservados.</p>
     </footer>
 
     <script src="./js/main.js"></script>
